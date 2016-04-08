@@ -19,11 +19,11 @@
 </template>
 
 <script>
-  import HexDropdown from './components/HexDropdown.vue'
+  import HexDropdown from './Component.vue';
 
   export default {
     components: {
-      HexDropdown
-    }
-  }
+      HexDropdown,
+    },
+  };
 </script>
