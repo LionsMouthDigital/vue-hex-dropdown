@@ -2,10 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>vue-hex-dropdown</title>
+    <title>Hex Dropdown</title>
   </head>
   <body>
-    <app></app>
-    <script src="dist/build.js"></script>
+    <h1>Hex Dropdown</h1>
+    <hex-dropdown label="Menu">
+      <ul>
+        <li><a href="#">Edit Profile</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </hex-dropdown>
+
+    <h2>Open on load</h2>
+    <hex-dropdown label="Menu" active>
+      <ul>
+        <li><a href="#">Edit Profile</a></li>
+        <li><a href="#">Settings</a></li>
+      </ul>
+    </hex-dropdown>
+
+    <script src="js/app.js"></script>
   </body>
 </html>
