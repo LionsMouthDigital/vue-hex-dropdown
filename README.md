@@ -16,7 +16,10 @@ grunt serve
 grunt build
 ```
 
+## Issues
+Please report issues in the [Hex repo](https://github.com/LionsMouthDigital/Hex/issues).
 ## License
+
 [CC BY-SA 4.0][license]
 
 To simplify attribution, we've included a [humans.txt](humans.txt) template with our info pre-filled.
