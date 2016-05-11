@@ -38,7 +38,7 @@ exports.default = {
   }
 };
 if (module.exports.__esModule) module.exports = module.exports.default
-;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"dropdown\">\n  <button @click=\"toggleDropdown\">{{ label }}</button>\n  <div v-show=\"active\" :transition=\"effect\" class=\"dropdown-panel\">\n    <slot></slot>\n  </div>\n</div>\n"
+;(typeof module.exports === "function"? module.exports.options: module.exports).template = "\n<div class=\"dropdown\">\n  <button @click=\"toggleDropdown\" class=\"dropdown-toggle\">{{ label }}</button>\n  <div v-show=\"active\" :transition=\"effect\" class=\"dropdown-panel\">\n    <slot></slot>\n  </div>\n</div>\n"
 if (module.hot) {(function () {  module.hot.accept()
   var hotAPI = _dereq_("vue-hot-reload-api")
   hotAPI.install(_dereq_("vue"), true)
