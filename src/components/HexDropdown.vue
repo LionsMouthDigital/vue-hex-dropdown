@@ -1,8 +1,7 @@
 <template>
-  <!-- Wrap in a div to prevent fragmentation. -->
-  <div>
+  <div class="dropdown">
     <button @click="toggleDropdown">{{ label }}</button>
-    <div v-show="active" :transition="effect">
+    <div v-show="active" :transition="effect" class="dropdown-panel">
       <slot></slot>
     </div>
   </div>
@@ -12,13 +11,24 @@
   export default {
     props: {
       // This shows/hides the dropdown's content.
-      active: Boolean,
+      active:          Boolean,
+      autoActive:      Boolean,
+      autoActiveWidth: {
+        type:    Number,
+        default: 960
+      },
       effect: String,
       // This serves as the button text.
-      label: {
+      label:  {
         type:     String,
         required: true,
       },
+    },
+
+    created() {
+      if (this.autoActive && window.innerWidth >= this.autoActiveWidth) {
+        this.active = true;
+      }
     },
 
     methods: {
