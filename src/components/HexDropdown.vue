@@ -1,6 +1,6 @@
 <template>
   <div class="dropdown">
-    <button @click="toggleDropdown" class="dropdown-toggle">{{ label }}</button>
+    <button @click.prevent="toggleDropdown" class="dropdown-toggle">{{ label }}</button>
     <div v-show="active" :transition="effect" class="dropdown-panel">
       <slot></slot>
     </div>
