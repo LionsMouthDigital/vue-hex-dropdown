@@ -68,5 +68,5 @@
   ],
   "license": "CC-BY-SA-4.0",
   "version": "1.0.0-beta.15",
-  "main": "src/components/HexDropdown.vue"
+  "main": "src/components/_HexDropdown.vue"
 }
