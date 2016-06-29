@@ -11,15 +11,3 @@
     },
   }
 </script>
-
-<style>
-  .dropdown:not(.is-open) .dropdown-panel {
-    display: none;
-  }
-
-  @media (min-width: 800px) {
-    .dropdown-panel {
-      display: block;
-    }
-  }
-</style>
